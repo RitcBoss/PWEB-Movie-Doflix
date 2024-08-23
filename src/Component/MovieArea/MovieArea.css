@@ -1,0 +1,189 @@
+main .ucm-bg-movie-all {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--bg-black);
+    background-position: center;
+    background-size: cover;
+    padding: 120px 20px 70px;
+    height: 210vh;
+
+}
+
+main .ucm-bg-movie-all .ucm-container {
+    width: 100%;
+    width: 1320px;
+    display: block;
+
+}
+
+main .ucm-bg-movie-all .ucm-container .ucm-content {
+    /* display: block; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-left {
+    display: block;
+}
+
+main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-left h3 {
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--color-red);
+}
+
+main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-left h1 {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--color-white);
+}
+
+main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 15px;
+}
+
+main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-right .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-right .item button {
+    padding: 10px 26px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--button);
+    border-radius: 50px;
+    border: 2px solid #ffffff10;
+    cursor: pointer;
+}
+
+
+
+.ucm-bg-movie-all .ucm-movie {
+    /* background-color: rgba(255, 255, 0, 0.078); */
+    display: flex;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 768px) {
+    main .banner .container .container-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    main .banner .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .banner .container .container-banner h2 {
+        font-size: 42px;
+        font-weight: 900;
+        color: var(--color-white);
+        max-width: 100%;
+    }
+
+    main .banner .container .container-banner h6 {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    main .banner .container .container-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    main .banner .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .banner .container .container-banner h2 {
+        font-size: 32px;
+        font-weight: 900;
+        color: var(--color-white);
+        max-width: 100%;
+    }
+
+    main .banner .container .container-banner h6 {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-left h1 {
+        font-size: 32px;
+    }
+
+    main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-left h3 {
+        font-size: 12px;
+    }
+
+    main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-left {
+        margin-bottom: 20px;
+    }
+
+    main .ucm-bg-movie-all {
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main .ucm-bg-movie-all .ucm-container .ucm-content .ucm-nav .ucm-nav-left {
+        margin-bottom: 20px;
+    }
+
+    main .ucm-bg-movie-all {
+        height: 100%;
+    }
+}

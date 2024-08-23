@@ -1,0 +1,91 @@
+.newsletter-area {
+    display: flex;
+    width: 100%;
+    background-color: var(--color-red);
+    justify-content: center;
+}
+
+.newsletter-area .newsletter-area-container {
+    width: 1320px;
+    display: block;
+    padding: 60px 0px;
+}
+
+.newsletter-area .newsletter-area-container .newsletter-area-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 90px;
+}
+
+.newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-left {
+    display: block;
+}
+
+.newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-left h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-left p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-right form {
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+}
+
+.newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-right form input {
+    width: 100%;
+    padding: 20px 25px;
+    padding-right: 270px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0px 3px 4px 0px rgba(30, 30, 30, 0.17);
+}
+
+.newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-right form button {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 4px;
+    border: none;
+    width: 30%;
+    background-color: var(--button);
+    color: var(--color-red);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 992px){
+    .newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-left h1{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-left h1{
+        font-size: 16px;
+    }
+    .newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-right form input{
+        padding-right: 50px;
+        padding: 15px 25px;
+    }
+    .newsletter-area .newsletter-area-container .newsletter-area-content .newsletter-area-content-right form button{
+        font-size: 10px;
+    }
+}

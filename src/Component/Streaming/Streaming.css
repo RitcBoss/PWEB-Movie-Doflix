@@ -1,0 +1,128 @@
+.live-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../Assets//live_bg.jpg);
+}
+
+.live-area .live-area-container {
+    display: block;
+    width: 1320px;
+    padding: 120px 0px;
+}
+
+.live-area .live-area-container .live-area-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 20px;
+    gap: 50px;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 40%;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left h1 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(121, 121, 121);
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left .live-box-hd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left .live-box-hd .left h1 {
+    font-size: 60px;
+    text-shadow: 0px 3px 4px rgba(30, 30, 30, 0.18);
+    line-height: 1;
+    margin-bottom: 0;
+    color: #d81c2b;
+    /* -webkit-text-fill-color: white; */
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #d81c2b;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left .live-box-hd .right h1 {
+    font-size: 36px;
+    margin: auto;
+    text-shadow: 0px 3px 4px rgba(30, 30, 30, 0.18);
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left .live-box-hd .right h2 {
+    font-size: 15px;
+    font-weight: 900;
+    text-shadow: 0px 3px 4px rgba(30, 30, 30, 0.18);
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left .live-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 16px 34px;
+    background-color: var(--color-red);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left .live-button:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-red);
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left .live-button p {
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 5px;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-left .live-button ion-icon {
+    color: black;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.live-area .live-area-container .live-area-content .live-area-content-right img {
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .live-area .live-area-container .live-area-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .live-area .live-area-container .live-area-content .live-area-content-left{
+        max-width: 100%;
+    }
+}

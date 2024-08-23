@@ -1,0 +1,21 @@
+.tv-series-area {
+    display: flex;
+    justify-content: center;
+    background-image: url(../Assets//wall-bg01.png);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 20px;
+    width: 100%;
+}
+
+.tv-series-area .tv-series-area-container {
+    width: 1320px;
+    display: block;
+}
+
+.tv-series-area .tv-series-area-container .tv-series-area-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,158 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main .banner-bg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 260px 0px 200px;
+    background-image: url(../Assets/background.png);
+    background-size: cover;
+}
+
+main .banner {
+    display: flex;
+    justify-content: center;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    /* width: 1320px; */
+    width: 100%;
+}
+
+main .banner .container {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 1320px;
+    padding: 0px 20px;
+}
+
+main .banner .container .container-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main .banner .container .container-banner h6 {
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--color-red);
+}
+
+main .banner .container .container-banner h2 {
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--color-white);
+    max-width: 55%;
+}
+
+main .banner .container .container-banner h2 span {
+    color: var(--color-red);
+}
+
+main .banner .container .container-banner ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: var(--color-white);
+    margin-top: 30px;
+}
+
+main .banner .container .container-banner ul li {
+    display: flex;
+}
+
+main .banner .container .container-banner ul .quality {
+    display: flex;
+    gap: 10px;
+}
+
+main .banner .container .container-banner ul .quality span {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--bg-white);
+    padding: 5px 10px;
+    color: var(--color-black);
+}
+
+main .banner .container .container-banner ul .quality span:last-child {
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+main .banner .container .container-banner ul .category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main .banner .container .container-banner ul .category a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+main .banner .container .container-banner ul .category a:hover {
+    color: var(--color-red);
+}
+
+main .banner .container .container-banner .release-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+main .banner .container .container-banner .release-time span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .banner .container .container-banner .release-time span p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-left: 5px;
+}
+
+main .banner .container .container-banner .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 16px 34px;
+    border: 2px solid var(--color-red);
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+main .banner .container .container-banner .btn:hover {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+main .banner .container .container-banner .btn ion-icon {
+    color: var(--color-white);
+}
+
+main .banner .container .container-banner .btn p {
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 5px;
+    color: var(--color-white);
+    text-decoration: none;
+}

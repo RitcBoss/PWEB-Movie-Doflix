@@ -1,0 +1,352 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    padding: 20px 0px;
+}
+
+nav {
+    width: 1320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container .nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav .container .nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+nav .container .nav-bar ul li {
+    display: block;
+
+}
+
+nav .container .nav-bar ul li .nav-title {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 38px 23px;
+    transition: all .3s ease;
+}
+
+nav .container .nav-bar ul li .nav-title:hover {
+    color: var(--color-red);
+}
+
+/* nav .container .nav-bar ul li:nth-child(1) > a{
+    color: var(--color-red);
+} */
+
+nav .container .nav-bar ul .menu-dropdown-list .dropdown-menu {
+    position: absolute;
+    display: block;
+    top: 100%;
+    list-style: none;
+    background-color: var(--button);
+    border: 0.5px solid #ededed64;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+    padding: 20px 0;
+}
+
+nav .container .nav-bar ul li:hover>.dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+nav .container .nav-bar ul .menu-dropdown-list .dropdown-menu li {
+    display: block;
+}
+
+nav .container .nav-bar ul .menu-dropdown-list .dropdown-menu li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 100px 10px 30px;
+    transition: all 0.3s ease;
+}
+
+nav .container .nav-bar ul .menu-dropdown-list .dropdown-menu li a:hover {
+    color: var(--color-red);
+}
+
+
+nav .container .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container .action ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container .action ul .header-search a {
+    color: var(--color-white);
+}
+
+nav .container .action ul .header-search a ion-icon {
+    font-size: 18px;
+}
+
+nav .container .action ul .header-lang {
+    display: flex;
+}
+
+nav .container .action ul .header-lang form {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+nav .container .action ul .header-lang form .icon {
+    display: flex;
+    align-items: center;
+}
+
+nav .container .action ul .header-lang form::before {
+    content: '';
+    width: 2px;
+    height: 18px;
+    margin-right: 20px;
+    background-color: #f2f2f218;
+}
+
+nav .container .action ul .header-lang form ion-icon {
+    font-size: 18px;
+    color: var(--color-red);
+}
+
+nav .container .action ul .header-lang form select {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white);
+    outline: none;
+}
+
+nav .container .action ul .header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container .action ul .header-btn a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-left: 30px;
+    background-color: var(--color-red);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+
+nav .container .action ul .header-btn a:hover {
+    background-color: var(--color-black);
+    border: 2px solid var(--color-red);
+}
+
+.header-btn-menu {
+    display: none;
+    position: absolute;
+    right: 2%;
+}
+
+.header-btn-menu button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.header-btn-menu ion-icon {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-nav-menu-container {
+    display: flex;
+    position: fixed;
+    width: 40%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--color-black);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transform: translateX(1000px);
+    transition: all .3s ease;
+    z-index: 99;
+}
+
+.show-hide{
+    display: flex;
+    position: fixed;
+    width: 40%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--color-black);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    z-index: 99;
+    transform: translateX(0px);
+    transition: all .7s ease;
+}
+
+.header-nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 42px 30px;
+    width: 100%;
+
+}
+
+.header-nav-menu .header-nav-menu-list {
+    display: block;
+    width: 100%;
+}
+
+.header-nav-menu .header-nav-menu-list li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-menu .header-nav-menu-list li img{
+    width: 33%;
+}
+
+.header-nav-menu .header-nav-menu-list button {
+    padding: 5px 9px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--color-white);
+}
+
+.header-nav-menu .header-nav-menu-list button:hover{
+    opacity: .6;
+}
+
+.header-nav-menu .header-nav-menu-list .list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-nav-menu .header-nav-menu-list .list {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+}
+
+
+
+.header-nav-menu .header-nav-menu-list li a {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px 0px;
+    font-size: 12px;
+    color: var(--color-white);
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.header-nav-menu .header-nav-menu-list li a:hover {
+    color: var(--color-red);
+}
+
+
+
+
+/* @media only screen and (max-width: 992px) {
+    .header-nav-menu-bar {
+        display: flex;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+    nav .container .nav-bar {
+        display: none;
+    }
+
+    nav .container .action ul .header-lang,
+    nav .container .action ul .header-btn a {
+        display: none;
+    }
+
+    .header-btn-menu{
+        display: flex;
+    }
+}
