@@ -24,7 +24,7 @@ const Navbar = () => {
                                     <Link class="nav-title" to='/movie'>MOVIE</Link>
                                 </li>
                                 <li><Link class="nav-title" to='/pricing'>PRICING</Link></li>
-                                <li><Link class="nav-title" defaultChecked to='/' style={{cursor:'pointer'}} >CONTACTS</Link></li>
+                                <li><Link class="nav-title" defaultChecked to='/' style={{cursor:'default'}} >CONTACTS</Link></li>
                             </ul>
                         </div>
                         <div class="action">
